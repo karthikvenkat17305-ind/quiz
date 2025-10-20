@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verifying Identity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div id="progress" class="progress"></div>
+      <div id="progress-images" class="progress-images"></div>
+    </div>
+
+    <div class="quiz-box">
+      <div class="question-header">
+        <img id="question-image" src="" alt="question image" class="question-img">
+        <h2 id="question">Loading question...</h2>
+      </div>
+
+      <div id="options" class="options"></div>
+
+      <button id="nextBtn" class="next-btn" disabled>Next</button>
+    </div>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <img id="popup-image" src="" alt="popup image" class="popup-img">
+      <h3 id="popup-title">Result</h3>
+      <p id="popup-info">Explanation will appear here.</p>
+      <button id="closePopup">Continue</button>
+    </div>
+  </div>
+
+  <!-- Final Summary Popup -->
+  <div id="finalPopup" class="popup hidden">
+    <div class="popup-content final-popup-content">
+      <img src="images/im2.png" alt="Trophy" class="final-img">
+      <h2 id="final-title">Quiz Completed!<b><p>You asked for makku! Here for you. Your only makku Go ahead!!</p></b></h2>
+      
+      <p id="final-score"></p>
+      <button id="finishBtn">Finish</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
